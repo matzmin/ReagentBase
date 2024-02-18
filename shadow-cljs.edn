@@ -1,0 +1,28 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "1.2.0"]]
+ 
+ :dev-http 
+ {7777 "public"}
+ 
+ :builds
+ {
+  :main {:target :browser
+         :output-dir "public/js"
+         :asset-path "/js"
+         :modules {:main {:init-fn core/init!}}
+         :devtools {:http-root "public"
+                    :http-port 7778
+                    ;:after-load app.core/after-load
+                    :watch-dir "src"
+                    ;:watch-fn app.core/watch-fn
+                    :watch-options {:poll-interval 1000}}}
+  } 
+}
+ 
+ 

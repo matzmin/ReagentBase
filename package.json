@@ -1,0 +1,11 @@
+{
+  "name": "rotate-canvas",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.27.4"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
+  }
+}
